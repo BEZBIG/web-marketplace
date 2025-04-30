@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 # Create your models here.
-class CustomUser(AbstactUser):
+class CustomUser(AbstractUser):
     city = models.CharField(max_length=100, blank=True, null=True)
     region = models.CharField(max_length=100, blank=True, null=True)
     address = models.TextField(blank=True, null=True)
